@@ -59,11 +59,15 @@ Image1= createImage(Imaget);
 quizWindow.add(Image1);
 quizWindow.pack();
 		// 13. ask another question
-
+String que = JOptionPane.showInputDialog("Is it moving outward");
 		// 14+ check answer, say if correct or incorrect, etc.
-
+if(que.equals("yes")){
+	JOptionPane.showMessageDialog(null, "incorrect");
+}
+else if(que.equals("no")){
+	JOptionPane.showMessageDialog(null, "Correct");
 	}
-
+	}
 	private static Component createImage(String imageUrl) throws MalformedURLException {
 		URL url = new URL(imageUrl);
 		Icon icon = new ImageIcon(url);
