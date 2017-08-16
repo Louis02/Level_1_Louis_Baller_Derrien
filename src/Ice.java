@@ -3,7 +3,7 @@ public class Ice {
 	private String flavor;
 	private String name;
 	private static int vote;
-	public IceCreamVotes(String flavor, String name, int vote){
+	public Ice(String flavor, String name){
 		vote++;
 		this.flavor = flavor;
 		this.name = name;
