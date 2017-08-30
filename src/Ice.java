@@ -12,10 +12,16 @@ public class Ice {
 	public String getFlavor(){
 		return flavor;
 	}
+	public void setFlavor(String flavor){
+		this.flavor=flavor;
+	}
 	public String getName(){
 		return name;
 	}
-	public int getVote(){
+	public void setName(String name){
+		this.name=name;
+	}
+	public static int getVote(){
 		return vote;
 	}
 }
