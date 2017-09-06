@@ -31,12 +31,14 @@ public class ChuckleClicker implements ActionListener {
 		frame.add(pannel);
 		button.addActionListener(this);
 		buton.addActionListener(this);
-		
+		button.setEnabled(false);
 		frame.add(panel);
 		frame.add(pannel);
 		panel.add(buton);
 		panel.add(button);
 		pannel.add(label);
+		label.setVerticalAlignment(JLabel.BOTTOM);
+
 		button.setBackground(Color.MAGENTA);
 		buton.setBackground(Color.RED);
 		button.setOpaque(true);
@@ -50,11 +52,13 @@ public class ChuckleClicker implements ActionListener {
 	public void actionPerformed(ActionEvent e) {
 		// TODO Auto-generated method stub
 		if (buton == e.getSource()) {
+			button.setEnabled(true);
 			label.setText(jokes[index]);
 		}
 		if(button == e.getSource()){
 			label.setText(punchline[index]);
 			index++;
+			button.setEnabled(false);
 		}
 		if(index>=jokes.length){
 			index=0;

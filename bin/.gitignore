@@ -9,6 +9,7 @@
 /ButtonListnerRunner.class
 /CarRunner.class
 /Cat.class
+/ChuckleClicker.class
 /Computer.class
 /ComputerRunner.class
 /CowTimer.class
@@ -48,4 +49,5 @@
 /images.png
 /mooo.wav
 /slowmover.jpg
-/ChuckleClicker.class
+/LoterryNumbers.class
+/BinaryConverter.class
