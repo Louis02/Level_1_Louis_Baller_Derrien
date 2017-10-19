@@ -38,8 +38,8 @@ Tweet(){
 	button.setText("press for tweet");
 	panell.add(tpane);
 	text.setForeground(Color.cyan);
-	panell.setBackground(Color.red);
-	tpane.setForeground(Color.PINK);
+	panell.setBackground(Color.yellow);
+	tpane.setForeground(Color.red);
 	tpane.setPreferredSize(new Dimension(500,500));
 	tpane.setEditable(true);
 	button.addActionListener(this);
