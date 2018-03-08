@@ -8,20 +8,21 @@ import javax.swing.JFrame;
 import javax.swing.JPanel;
 
 public class CodingTest implements ActionListener {
-	 JFrame frame = new JFrame();
-	    JPanel panel = new JPanel();
-	   JButton button = new JButton();
-	   JButton button2 = new JButton();
-	  JButton button3 = new JButton();
- JButton button4 = new JButton();
+	JFrame frame = new JFrame();
+	JPanel panel = new JPanel();
+	JButton button = new JButton();
+	JButton button2 = new JButton();
+	JButton button3 = new JButton();
+	JButton button4 = new JButton();
 
 	public static void main(String[] args) {
-		CodingTest code= new CodingTest();
-		
+		CodingTest code = new CodingTest();
+
 	}
+
 	public CodingTest() {
 		frame.setVisible(true);
-		
+
 		frame.add(panel);
 		panel.add(button);
 		panel.add(button2);
@@ -45,28 +46,27 @@ public class CodingTest implements ActionListener {
 	@Override
 	public void actionPerformed(ActionEvent e) {
 		// TODO Auto-generated method stub
-		if(e.getSource()== button) {
+		if (e.getSource() == button) {
 			speak("yellow");
 		}
-		if(e.getSource()==button2) {
+		if (e.getSource() == button2) {
 			speak("red");
 		}
-		if(e.getSource()==button3) {
+		if (e.getSource() == button3) {
 			speak("blue");
 		}
-		if(e.getSource()==button4) {
+		if (e.getSource() == button4) {
 			speak("green");
 		}
-		
+
 	}
+
 	void speak(String words) {
 		try {
 			Runtime.getRuntime().exec("say " + words);
-		}
-		catch(IOException e) {
+		} catch (IOException e) {
 			e.printStackTrace();
 		}
 	}
-	
+
 }
-	
